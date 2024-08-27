@@ -7,7 +7,7 @@ export default function FavoritesPage() {
   const hasFavorites = useMemo(() => favorites.length , [favorites])
 
   return (
-    <>
+    <section className="h-screen">
       <h1 className="text-6xl font-extrabold">Favoritos</h1>
 
       {hasFavorites ? (
@@ -20,11 +20,11 @@ export default function FavoritesPage() {
         ))}
       </div>
       ) : (
-        <div className="my-10 text-center text-2xl">
+        <div className="my-10 text-center text-2xl ">
           Los favoritos se muestran aquí
         </div>
       )
     }
-    </>
+    </section>
   );
 }
