@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Modal from '../components/Modal'
 import { useAppStore } from '../stores/useAppStore'
 import Notification from '../components/Notification'
+import Footer from '../components/Footer'
 
 function Layouts() {
   const loadFromStorage = useAppStore((state) => state.loadFromStorage)
@@ -20,6 +21,7 @@ function Layouts() {
     </main>
     <Modal/>
     <Notification/>
+    <Footer/>
     </>
   )
 }
